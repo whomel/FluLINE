@@ -1,5 +1,8 @@
 # FluLINE (Influenza Analysis Pipeline)
 
+Update 17 Oct, 2019:
+ - Forked from Uma's repo. Added last versions from local.
+
 Update 6 July 2018: 
  - Added custom database option. user defined fasta file with sequences to database for querying.
  - Extended to Non-segment virus analysis
