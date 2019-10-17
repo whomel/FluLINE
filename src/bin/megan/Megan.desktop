@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Megan
+Exec=/bin/sh "/home/user/Desktop/FluLINE/src/bin/megan/MEGAN"
+Icon=/home/user/Desktop/FluLINE/src/bin/megan/.install4j/MEGAN.png
+Categories=Application;

@@ -1,0 +1,20 @@
+Thank you for acquiring a MEGAN v. 5 license for academic use.
+The license permits use of the software exclusively for academic research (publications in academic journals and papers at academic conferences) and instruction, undertaken at an academic institution.
+
+This text constitutes your license certificate for MEGAN5 and summarizes details of the full written license agreement.
+Please save this as a plain text file named "MEGAN5-academic-license.txt" on the computer that you intend to use MEGAN5 on.
+Start MEGAN5 and load the file from MEGAN5's Licensing dialog.
+The certificate is digitally signed and our software will not accept any modifications to it.
+
+License certificate:
+User: Yi-Mo DENG
+Email: yi-mo.deng@influenzacentre.org
+Organization: WHO Collaborating Centre for Reference and Research on Influenza, Doherty Institute
+Address: 792 Elizabeth Street
+City: Melbourne
+Country: Australia
+LicenseType: Academic - academic research, publication and teaching only.
+ExpireDate: 2020-Oct-17
+Signature: 302C02145C84353C7F1EB2A48D011D88A545C1F48E70D1A50214119D6FC60A58CC21697A9C1B4DB097374A4863B0
+
+

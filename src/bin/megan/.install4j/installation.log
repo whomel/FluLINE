@@ -1,0 +1,359 @@
+[INFO] logger started at Wed Oct 17 00:15:50 AEDT 2018
+[INFO] executable name: /home/user/Downloads/MEGAN_unix_5_11_3.sh
+[INFO] install4j version: 6.0.4 (build 6130)
+[INFO] Properties: 
+-- listing properties --
+java.runtime.name=Java(TM) SE Runtime Environment
+exe4j.moduleName=/home/user/Downloads/MEGAN_unix_5_11_...
+sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64
+java.vm.version=25.181-b13
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=AU
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+install4j.exeDir=/home/user/Downloads/
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/home/user/Downloads/MEGAN_unix_5_11_...
+java.runtime.version=1.8.0_181-b13
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+i4jv=0
+java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/en...
+os.arch=amd64
+java.io.tmpdir=/tmp
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+os.name=Linux
+exe4j.totalDataLength=94123817
+sun.java2d.noddraw=true
+sun.jnu.encoding=UTF-8
+java.library.path=/usr/java/packages/lib/amd64:/usr/lib...
+sun.awt.enableExtraMouseButtons=true
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=4.15.0-34-generic
+i4j.vpt=true
+user.home=/home/user
+install4j.cwd=/home/user/Downloads
+user.timezone=Australia/Melbourne
+java.awt.printerjob=sun.print.PSPrinterJob
+java.specification.version=1.8
+install4j.jvmDir=/usr/lib/jvm/java-8-oracle/jre
+file.encoding=UTF-8
+user.name=user
+java.class.path=i4jruntime.jar:user.jar
+java.vm.specification.version=1.8
+sun.arch.data.model=64
+java.home=/usr/lib/jvm/java-8-oracle/jre
+sun.java.command=com.install4j.runtime.launcher.UnixLa...
+java.specification.vendor=Oracle Corporation
+user.language=en
+awt.toolkit=sun.awt.X11.XToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_181
+java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ex...
+sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/re...
+java.vendor=Oracle Corporation
+install4j.appDir=/home/user/Downloads/
+file.separator=/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+sun.font.fontmanager=sun.awt.X11FontManager
+sun.desktop=gnome
+sun.cpu.isalist=
+[INFO] com.install4j.runtime.beans.actions.misc.RequestPrivilegesAction [ID 1691242625]: Execute action
+       Property obtainIfAdminWin: true
+       Property obtainIfNormalWin: false
+       Property failIfNotObtainedWin: true
+       Property obtainIfAdminMac: false
+       Property obtainIfNormalMac: false
+       Property failIfNotObtainedMac: true
+       Property failIfNotRootUnix: false
+       Property allRequested: false
+       Property rollbackSupported: false
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.screens.StartupScreen [ID 15]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.WelcomeScreen [ID 1691242173]: Show screen
+[INFO] checking writable with maximum
+[INFO] com.install4j.runtime.beans.screens.WelcomeScreen [ID 1691242173]: thread name AWT-EventQueue-0
+[INFO] Variable changed: sys.confirmedUpdateInstallation=true[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.actions.misc.LoadResponseFileAction [ID 1691242626]: Execute action
+       Property excludedVariables: null
+       Property overwriteStrategy: Do not overwrite command line
+       Property registerForResponseFile: true
+       Property file: null
+       Property rollbackSupported: true
+       Variable changed: sys.adminRights=false[class java.lang.Boolean]
+       Variable changed: sys.languageId=en[class java.lang.String]
+       Variable changed: sys.symlinkDir=/usr/local/bin[class java.lang.String]
+       Variable changed: sys.component.1691242193=true[class java.lang.Boolean]
+       Variable changed: sys.programGroupDisabled=false[class java.lang.Boolean]
+       Variable changed: executeLauncherAction=true[class java.lang.Boolean]
+       Variable changed: sys.component.1691242357=true[class java.lang.Boolean]
+       Variable changed: sys.installationDir=/home/user/Desktop/FluLINE/src/bin/megan[class java.lang.String]
+       Variable changed: myXmx=2000[class java.lang.Integer]
+       Execute action successful after 8 ms
+[INFO] com.install4j.runtime.beans.screens.WelcomeScreen [ID 1691242173]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.LicenseScreen [ID 1691242174]: Show screen
+[INFO] com.install4j.runtime.beans.screens.LicenseScreen [ID 1691242174]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.ComponentsScreen [ID 1691242176]: Show screen
+[INFO] com.install4j.runtime.beans.screens.ComponentsScreen [ID 1691242176]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 1691242179]: Show screen
+[INFO] com.install4j.runtime.beans.actions.UninstallPreviousAction [ID 1691243197]: Execute action
+       Property onlyIfSameApplicationId: true
+       Property installationDirectory: null
+       Property rollbackSupported: true
+       checking running processes
+       checking running processes ok
+       getting previous installation id
+       starting uninstaller
+[INFO] com.install4j.runtime.beans.actions.UninstallPreviousAction$UninstallerThread: see uninstallPrevious.log for the log file of the uninstaller
+[INFO] com.install4j.runtime.beans.actions.UninstallPreviousAction [ID 1691243197]: finished
+       Execute action successful after 1694 ms
+[INFO] com.install4j.runtime.beans.actions.InstallFilesAction [ID 1691242180]: Execute action
+       Property checkFreeSpace: true
+       Property validateApplicationId: false
+       Property installRuntime: true
+       Property sizeCalculatorScript: null
+       Property saveDownloadedFiles: false
+       Property updateBundledJre: true
+       Property triggerReboot: true
+       Property delay: false
+       Property fileFilterScript: null
+       Property directoryResolverScript: null
+       Property showFileNames: true
+       Property rollbackSupported: true
+       Component MEGAN[1691242357]; Selected: true
+       Component Manual[1691242193]; Selected: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/2bfa42ba.lprop; size: 54 bytes; exists: true
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/MEGAN.png; size: 3043 bytes; exists: true
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/automaticUpdater; size: 12611 bytes; exists: true
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 755, overwriteMode: If newer otherwise ask, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       File times: 1453334518000, 1453334518000
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/automaticUpdater.png; size: 4831 bytes; exists: true
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/c67b37b5.lprop; size: 54 bytes; exists: true
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/c7584a7c.lprop; size: 54 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/uninstall.png; size: 73008 bytes; exists: true
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/uninstall; size: 12737 bytes; exists: false
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 700, overwriteMode: If newer otherwise ask, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/License.txt; size: 967 bytes; exists: false
+       File options set to: [fileTime: Thu Jan 21 11:01:34 AEDT 2016, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/MEGAN; size: 12245 bytes; exists: false
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 755, overwriteMode: If newer otherwise ask, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/MEGAN.vmoptions; size: 243 bytes; exists: false
+       File options set to: [fileTime: Thu Jan 21 11:01:58 AEDT 2016, mode: 644, overwriteMode: Never, shared: false, uninstallMode: If created, but not for update, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/class/log4j.properties; size: 253 bytes; exists: false
+       File options set to: [fileTime: Thu Jan 21 11:01:34 AEDT 2016, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/.DS_Store; size: 6148 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/Jama-1.0.2.jar; size: 35631 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/Jama-license.txt; size: 403 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/LICENSE-Jsch.txt; size: 1651 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/LICENSE-gson.txt; size: 11562 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/MEGAN.jar; size: 3127058 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/README-gson.txt; size: 385 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/TableLayout.jar; size: 117166 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/aopalliance-1.0.jar; size: 4467 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/aopalliance-License.txt; size: 71 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/apple.jar; size: 66931 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/aspectjrt-1.7.4.jar; size: 119683 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/aspectjrt-license.txt; size: 11374 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.dom-documentation.txt; size: 3995 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.dom-software.txt; size: 3544 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.fop-transcoder-allinone-1.1.txt; size: 158 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.js.txt; size: 46904 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.sax.txt; size: 779 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.xalan-2.7.0.txt; size: 142 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.xerces_2_5_0.txt; size: 2892 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/LICENSE.xmlgraphics-commons-2.0.txt; size: 11358 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/README.fop-transcoder-allinone-1.1.txt; size: 357 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/README.js.txt; size: 743 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/README.xalan-2.7.0.txt; size: 216 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/README.xerces_2_5_0.txt; size: 214 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/README.xml-apis-1.3.04.txt; size: 872 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/README.xml-apis-ext-1.3.04.txt; size: 593 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/Squiggle.icns; size: 49249 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-LICENSE.txt; size: 11357 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-NOTICE.txt; size: 684 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-anim-1.8.jar; size: 377041 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-awt-util-1.8.jar; size: 301026 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-bridge-1.8.jar; size: 529673 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-codec-1.8.jar; size: 108571 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-css-1.8.jar; size: 256539 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-dom-1.8.jar; size: 140057 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-ext-1.8.jar; size: 10344 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-extension-1.8.jar; size: 54734 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-gui-util-1.8.jar; size: 152268 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-gvt-1.8.jar; size: 144226 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-parser-1.8.jar; size: 55267 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-script-1.8.jar; size: 17155 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-svg-dom-1.8.jar; size: 217197 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-svggen-1.8.jar; size: 177874 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-swing-1.8.jar; size: 155148 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-transcoder-1.8.jar; size: 92512 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-util-1.8.jar; size: 107736 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/batik-xml-1.8.jar; size: 26776 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/fop-transcoder-allinone-1.1.jar; size: 1477961 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/js.jar; size: 504741 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/make-squiggle-app.sh; size: 2859 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/xalan-2.7.0.jar; size: 3078601 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/xerces_2_5_0.jar; size: 934835 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/xml-apis-1.3.04.jar; size: 194354 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/xml-apis-ext-1.3.04.jar; size: 85686 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/batik-1.8/xmlgraphics-commons-2.0.jar; size: 632499 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/colt-license.txt; size: 604 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/colt.jar; size: 618996 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/commons-License; size: 11357 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/commons-codec-1.6.jar; size: 232771 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/commons-logging-1.1.3.jar; size: 62050 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/contrasts.jar; size: 34148 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/data.jar; size: 66227277 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/fluent-hc-4.3.5.jar; size: 29986 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/fluent-hc-license.txt; size: 10238 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/gson-2.2.2.jar; size: 203426 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/guava-18.0.jar; size: 2256213 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/guava-license.txt; size: 10238 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/http-license.txt; size: 10238 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/httpclient-4.3.5.jar; size: 590533 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/httpclient-cache-4.3.5.jar; size: 149779 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/httpcore-4.3.2.jar; size: 282269 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/httpmime-4.3.5.jar; size: 37277 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/i4jruntime.jar; size: 1191958 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jackson-annotations-2.2.3.jar; size: 33483 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jackson-core-2.2.3.jar; size: 192699 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jackson-databind-2.2.3.jar; size: 865838 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jackson-license.txt; size: 10238 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/java.inject-1-license.txt; size: 11357 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/javax.inject-1.jar; size: 2497 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jcl-over-slf4j-1.7.5.jar; size: 16517 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jcl-over-slf4j-license.txt; size: 1150 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jcommon-1.0.16.jar; size: 328943 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jcommon-license.txt; size: 26448 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jsci-core.jar; size: 332792 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jsp-api-2.1.jar; size: 100636 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jsp-api-license.txt; size: 36425 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/jstl-1.2.jar; size: 414240 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/junit-License.txt; size: 11248 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/junit.jar; size: 314932 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/log4j-1.2.15.jar; size: 391834 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/log4j-license.txt; size: 11350 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/picard-1.105.jar; size: 1724459 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/picard-license.txt; size: 9139 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/servlet-api-2.5.jar; size: 105112 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/servlet-api-license.txt; size: 35882 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/slf4j-api-1.7.5.jar; size: 26084 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/slf4j-license.txt; size: 1150 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/slf4j-log4j12-1.7.5.jar; size: 8869 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-License.txt; size: 11357 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-aop-4.0.0.RELEASE.jar; size: 351240 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-beans-4.0.0.RELEASE.jar; size: 669267 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-context-4.0.0.RELEASE.jar; size: 950606 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-core-4.0.0.RELEASE.jar; size: 955328 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-expression-4.0.0.RELEASE.jar; size: 206507 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-security-config-3.2.5.RELEASE.jar; size: 406830 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-security-core-3.2.5.RELEASE.jar; size: 366941 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-security-web-3.2.5.RELEASE.jar; size: 342469 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-web-4.0.0.RELEASE.jar; size: 661567 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/spring-webmvc-4.0.0.RELEASE.jar; size: 660682 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/tablelayoutLicense.txt; size: 4443 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/jars/xercesImpl-2.9.1.jar; size: 1229125 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/tools/blast2lca; size: 590 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/tools/sam2rma; size: 571 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/manual.pdf; size: 688321 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/inst_jre.cfg; size: 31 bytes; exists: true
+       File options set to: [fileTime: Wed Oct 17 00:16:02 AEDT 2018, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/i4jruntime.jar; size: 1790963 bytes; exists: true
+       File options set to: [fileTime: Wed Oct 17 00:16:02 AEDT 2018, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/MessagesDefault; size: 32917 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/i4jparams.conf; size: 77159 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/stats.properties; size: 1232 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/launchers.xml; size: 254 bytes; exists: false
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/user.jar; size: 20301 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/i4j_extf_2_fvdprr_cwz6mn.png; size: 1028 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/i4j_extf_4_fvdprr_1qp61c0.png; size: 4831 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/i4j_extf_1_fvdprr.txt; size: 967 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/i4j_extf_3_fvdprr_1sxzjn7.png; size: 2565 bytes; exists: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/.install4j/i4j_extf_0_fvdprr.utf8; size: 32917 bytes; exists: true
+       Execute action successful after 635 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 1691242181]: Execute action
+       Property allUsers: true
+       Property linkDirectory: /usr/local/bin
+       Property unixSymlinks: true
+       Property programGroupName: 
+       Property addUninstaller: true
+       Property uninstallerMenuName: MEGAN Uninstaller
+       Property addDefaultLauncherLinks: true
+       Property categories: Application
+       Property programGroupEntryConfigs: []
+       Property failForSymlinksNotCreated: false
+       Property unixMenuEntries: true
+       Property rollbackSupported: true
+       Install file: /home/user/Desktop/FluLINE/src/bin/megan/Megan.desktop; size: 221 bytes; exists: false
+       File options set to: [fileTime: Wed Oct 17 00:16:02 AEDT 2018, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/user/.local/share/applications/Megan-0.desktop; size: 221 bytes; exists: true
+       File options set to: [fileTime: Wed Oct 17 00:16:02 AEDT 2018, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Execute action successful after 3 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.RegisterAddRemoveAction [ID 1691242182]: Execute action
+       Property iconSource: Installer icon
+       Property itemName: MEGAN 5.11.3
+       Property icon: null
+       Property persistentProperties: {}
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.files.SetModeAction [ID 1691243283]: Execute action
+       Property recursive: true
+       Property mode: u+x
+       Property showFileNames: true
+       Property showProgress: false
+       Property files: [tools]
+       Property fileFilter: null
+       Property directoryFilter: null
+       Property rollbackSupported: true
+       Setting mode for /home/user/Desktop/FluLINE/src/bin/megan/tools
+       Setting mode for /home/user/Desktop/FluLINE/src/bin/megan/tools/blast2lca
+       Setting mode for /home/user/Desktop/FluLINE/src/bin/megan/tools/sam2rma
+       Execute action successful after 10 ms
+[INFO] com.install4j.runtime.beans.actions.text.ReplaceInstallerVariablesAction [ID 1691243381]: Execute action
+       Property ignoreMissing: true
+       Property escapeForPropertyFile: false
+       Property failIfNoReplacement: false
+       Property encoding: null
+       Property files: [tools/sam2rma, tools/blast2lca]
+       Property rollbackSupported: true
+       Backing up /home/user/Desktop/FluLINE/src/bin/megan/tools/sam2rma
+       Backing up /home/user/Desktop/FluLINE/src/bin/megan/tools/blast2lca
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 1691242179]: Rollback barrier reached
+       command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 1691242744]: Show screen
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 1691242744]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 1691242944]: Show screen
+       Variable changed: myXmx=10000[class java.lang.Integer]
+[INFO] com.install4j.runtime.beans.actions.misc.AddVmOptionsAction [ID 1691242947]: Execute action
+       Property vmOptions: [-Xmx10000M]
+       Property launcherId: 1691242235
+       Property macosVmOptionsType: Next to the application bundle
+       Property rollbackSupported: true
+       Backing up /home/user/Desktop/FluLINE/src/bin/megan/MEGAN.vmoptions
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 1691242944]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FinishedScreen [ID 1691242183]: Show screen
+       Variable changed: executeLauncherAction=true[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.actions.finish.ExecuteLauncherAction [ID 1691243020]: Execute action
+       Property launcherId: 1691242235
+       Property arguments: null
+       Property rollbackSupported: false
+       Execute action successful after 509 ms
+[INFO] com.install4j.runtime.beans.screens.FinishedScreen [ID 1691242183]: command: finish
+       cleaning up
+       Finished

@@ -1,0 +1,8 @@
+MEGAN - MEtaGenome ANalyzer
+
+Use of MEGAN requires a license that is granted by the University of Tuebingen. Academic licenses are issued free of charge for use at non-profit academic institutions. All other usages require a commerical license, which is granted for an annual fee. Contact daniel.huson@uni-tuebingen.de for more details.
+
+As most programs, this software probably contains many bugs, both apparent and less apparent ones.  We recommend that you cross-validate all results obtained with this software using other programs. We do not accept responsibility for any problems that arise from use of this software. Use entirely at your own risk.  
+
+If you publish results obtained with the help of this software, then we require that you cite the software as follows: D.H. Huson et al., Integrative analysis of environmental sequences using MEGAN 4, Genome Res. 2011. 21:1552-1560, software available from: www-ab.informatik.uni-tuebingen.de/software/megan
+

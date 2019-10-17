@@ -1,0 +1,21 @@
+#!/bin/bash
+# Runs the SAM to RMA command-line program
+# Daniel Huson, 2015
+
+options=$*
+if [ $# == 0 ]
+then
+	options="-h"
+fi	
+
+java=/usr/lib/jvm/java-8-oracle/jre/bin/java
+
+bin_dir=`dirname "$0"`       # may be relative path
+bin_dir=`cd "$bin_dir" && pwd`    # ensure absolute path
+jars_dir="$bin_dir/../jars"
+classpath="$jars_dir/MEGAN.jar:$jars_dir/picard-1.105.jar:$jars_dir/data.jar"
+vmOptions=`grep "^-" $bin_dir/../MEGAN.vmoptions`
+
+java_flags="-server -Duser.language=en -Duser.region=US $vmOptions"
+
+$java $java_flags -cp "$classpath" megan.rma3.SAM2RMA  $options

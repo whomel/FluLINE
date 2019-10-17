@@ -53,7 +53,7 @@ for i in the_key:
   if not os.path.exists(annot_dir):  os.makedirs(annot_dir)
   new_dir = todir + "/Consensus_genome/" + the_key[i][-1]
   if not os.path.exists(new_dir):  os.makedirs(new_dir)
-  cp_f = "cp " + out_dir + "/*/" + i + "_consensus.fa " + new_dir + "/" + i + ".fa "
+  cp_f = "cp " + out_dir + "/*/" + i + "-genome.fa " + new_dir + "/" + i + ".fa"
   os.system(cp_f)
   cp_annot = "cp "  + out_dir + "/*/" + i + "-annotation.csv "  + annot_dir
   os.system(cp_annot)
@@ -63,13 +63,13 @@ for i in the_key:
   os.system(cp_snp)
   if not os.path.exists(todir + "/Coverage"): os.makedirs(todir + "/Coverage")
   os.system(" cp " + out_dir + "/*/" + i + "*.png "  + todir + "/Coverage/")
-  graphs_dir = todir + "/Images/" + the_key[i][-1] # + "/" + i
-  if not os.path.exists(graphs_dir) : os.makedirs(graphs_dir)
-  cp_qc1 = "cp " + fq_dir + "/"  + the_key[i][2] + "-Qc_fastqc/Images/per_base_quality.png " +  graphs_dir + "/" + i + "-per_base_quality.png"
-  cp_qc2 = "cp " + fq_dir + "/"  + the_key[i][2] + "-Qc_fastqc/Images/sequence_length_distribution.png " +  graphs_dir + "/" + i + "-sequence_length_distribution.png"
+ # graphs_dir = todir + "/Images/" + the_key[i][-1] # + "/" + i
+ # if not os.path.exists(graphs_dir) : os.makedirs(graphs_dir)
+ # cp_qc1 = "cp " + fq_dir + "/"  + the_key[i][2] + "-Qc_fastqc/Images/per_base_quality.png " +  graphs_dir + "/" + i + "-per_base_quality.png"
+ # cp_qc2 = "cp " + fq_dir + "/"  + the_key[i][2] + "-Qc_fastqc/Images/sequence_length_distribution.png " +  graphs_dir + "/" + i + "-sequence_length_distribution.png"
   #  cp_qc3 = "cp " + hmdir + "/megan_pdf/"  + the_key[i][2] + "-Qc_blast_nAll.pdf " +  graphs_dir + "/" + i + "-megan.pdf"
-  os.system(cp_qc1)
-  os.system(cp_qc2)
+ # os.system(cp_qc1)
+ # os.system(cp_qc2)
 #    os.system(cp_qc3)
 
 # get the mapped summary stats...

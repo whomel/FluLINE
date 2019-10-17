@@ -17,44 +17,17 @@ info_list = []
 with open(info, 'r') as csvfile:
   reader = csv.reader(csvfile)
   for xi in reader:
-    print xi
-    info_list = xi 
-print info_list
+    #print xi
+    info_list.append(xi) 
+print info_list[0]
 # if one samlple or many samples : fixing the list length issue
-if len(info_list[0]) < 4 : subtypes = list[set([c[-1] for c in info_list])]
-else: subtypes = [info_list[-1],]
+if len(info_list[0]) == 4 :
+    print list(set([c[3] for c in info_list]))
+    subtypes = list(set([c[3] for c in info_list]))
+    print "Sub"
+    print subtypes
+#else: subtypes = [info_list[-1],]
 
-# Merge all Annotation file of the consensus genome
-all_annot = []
-assembled_cons = [["Sample Id", "Sample Name", "Genome"]]
-
-for sub_type in subtypes:
-  for x in glob.glob(res_dir + "/Consensus_genome/*csv"):
-    X = x.split("/")
-    y = X[-1].replace("-annotation.csv", "")
-    with open(x, 'rb') as csvfile:
-      r = csv.reader(csvfile)
-      genome = "-"
-
-      for a in r:
-        if a[0] != "Genome":
-	  print X, a
-          seg_nam = a[0].split("|")[1]
-      #    a.insert(0,y + "." + seg[seg_nam]) 
-          all_annot.append(a) 
-	  if a[1].split("|")[1] == "Genome": genome = a[-1]      
-        else: annot_header = a  
-    assembled_cons.append([y, a[1].split("|")[0], genome])      	
-
-  with open(res_dir + '/' + sub_type + '-ConsensusDetail.csv', 'wb') as f:
-    writer = csv.writer(f)
-    annot_header.insert(0,"Sample Id")
-    all_annot.insert(0,annot_header)
-    writer.writerows(all_annot) 
-         
-  with open(res_dir + '/' + sub_type + '-ConsensusSummary.csv', 'wb') as f:
-    writer = csv.writer(f)
-    writer.writerows(assembled_cons) 
 
 
 # Merge all SNPs called...
@@ -75,6 +48,42 @@ for sub_type in subtypes:
     writer = csv.writer(f)
     merge_snps.insert(0, ["Sample Id", "Sample Name", "POS","ID","REF","ALT", "QUAL", "FILTER", "INFO"])
     writer.writerows(merge_snps) 
+
+
+
+
+# Merge all Annotation file of the consensus genome
+all_annot = []
+assembled_cons = [["Sample Id", "Sample Name", "Genome"]]
+
+for sub_type in subtypes:
+  for x in glob.glob(res_dir + "/Consensus_genome/" + sub_type +"/*csv"):
+    X = x.split("/")
+    y = X[-1].replace("-annotation.csv", "")
+    with open(x, 'rb') as csvfile:
+      r = csv.reader(csvfile)
+      genome = "-"
+
+      for a in r:
+	#print "AAAAA", a
+        if a[0] != "Genome":
+	  print X, a
+          seg_nam = a[0].split("|")[1]
+      #    a.insert(0,y + "." + seg[seg_nam]) 
+          all_annot.append(a) 
+	  if a[0].split("|")[1] == "Genome": genome = a[-1]      
+        else: annot_header = a  
+    assembled_cons.append([y, a[1].split("|")[0], genome])      	
+
+  with open(res_dir + '/' + sub_type + '-ConsensusDetail.csv', 'wb') as f:
+    writer = csv.writer(f)
+    annot_header.insert(0,"Sample Id")
+    all_annot.insert(0,annot_header)
+    writer.writerows(all_annot) 
+         
+  with open(res_dir + '/' + sub_type + '-ConsensusSummary.csv', 'wb') as f:
+    writer = csv.writer(f)
+    writer.writerows(assembled_cons) 
 
 
 

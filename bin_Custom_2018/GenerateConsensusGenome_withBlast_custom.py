@@ -147,7 +147,7 @@ def main():
  	  #print handle
 	  record = SeqIO.read(handle, 'genbank')
           #record = Entrez.read(handle) #, validate=False)
-	  #print record
+	  print record, nearest_ref1
           with open( nearest_ref1, "w") as f :
           #f.write(">" + record[0]["GBSeq_primary-accession"] + "\r\n" + record[0]["GBSeq_sequence"] + "\r\n")
    	    f.write(">" + record.id + "\r\n" + str(record.seq) + "\r\n")	
@@ -176,12 +176,13 @@ def main():
     cons_ref2_indx = "bowtie2-build " + Cons_ref_ful  + " tmp_idx" 
     os.system(cons_ref2_indx)
     out_sam = Cons_ref_ful.replace(".fa", ".sam")
-    bowtie2_cmd = "bowtie2 --local --fast-local  -x  tmp_idx  -U " + opts.f1 + " -S  " + out_sam + " -p 8"
+    #bowtie2_cmd = "bowtie2 --local  -x  tmp_idx  -U " + opts.f1 + " -S  " + out_sam + " -p 8"
+    bowtie2_cmd = "bowtie2 -x  tmp_idx  -U " + opts.f1 + " -S  " + out_sam + " -p 8"
     os.system(bowtie2_cmd)
 
   # run lofreq2....
     bam_cmd = "samtools view -b -S " + out_sam  + " > " + out_sam.replace(".sam", ".bam")
-    bam_sort = "samtools sort " + out_sam.replace(".sam", ".bam") + " " + out_sam.replace(".sam", "-sort")
+    bam_sort = "samtools sort " + out_sam.replace(".sam", ".bam") + " -o " + out_sam.replace(".sam", "-sort.bam")
     cmd = "lofreq   call -C 100 -f  " + Cons_ref_ful  + " -o " + out_sam.replace(".sam", "-snps.vcf") + " " + out_sam.replace(".sam", "-sort.bam")
     # 100 is min depth required to call SNPs
     print bam_cmd

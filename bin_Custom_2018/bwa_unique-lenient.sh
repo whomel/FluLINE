@@ -126,7 +126,7 @@ for bin in bwa java samtools; do
 done
 
 # check for picard needed for readgroup adding (needed for GATK)
-picard_readgroup_jar=${PICARDDIR}/AddOrReplaceReadGroups.jar
+picard_readgroup_jar=${PICARDDIR}/picard.jar
 if [ ! -s $picard_readgroup_jar ]; then
     echo "FATAL: couldn't find Picard's $(basename picard_readgroup_jar). Please set PICARDDIR to your Picard installation" 1>&2
     exit 1
@@ -206,16 +206,19 @@ fi
 #cat <<EOF
 test $debug -eq 1 && echo "DEBUG: bwa $args | grep..."
 
+echo "ARGSSSS"
+echo $args
+echo $outbam
 bwa $args > t.bam
 bwa $args | \
 #    grep '\(^@\|XT:A:U\)' | \
-    samtools view -b -S -F 12 - | \
-    java -jar $picard_readgroup_jar \
+#    samtools view -b -S -F 12 - | \
+    java -jar $picard_readgroup_jar AddOrReplaceReadGroups \
         INPUT=/dev/stdin OUTPUT=/dev/stdout \
         VALIDATION_STRINGENCY=LENIENT \
         RGCN="DukeNUS" RGPL="iontrorrent" RGLB="library-placeholder" \
         RGPU="platform-unit-placeholder" RGSM="sample-name-placeholder" | \
-    samtools sort - ${outbam%.bam} || exit 1
+	samtools sort -o $outbam - || exit 1
 #EOF
 
 # user might want to move the file, so don't: samtools index $outbam
